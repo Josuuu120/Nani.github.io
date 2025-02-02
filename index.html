@@ -51,15 +51,23 @@
             grid-area: right;
         }
         .left img, .right img {
-            max-width: 120%; /* Aumenta el tamaño en un 20% */
+            width: 120%; /* Aumenta el tamaño en un 20% */
             border-radius: 10px;
         }
-        .left img {
+        .left img:nth-child(1) {
             margin-top: 10px;
             margin-bottom: 30px;
         }
-        .right img {
+        .left img:nth-child(2) {
+            margin-top: -20px;
+            margin-bottom: 10px;
+        }
+        .right img:nth-child(1) {
             margin-top: 30px;
+            margin-bottom: 10px;
+        }
+        .right img:nth-child(2) {
+            margin-top: -20px;
             margin-bottom: 10px;
         }
         .buttons {
@@ -73,11 +81,11 @@
         .button {
             background-color: #d1c4e9;
             color: black;
-            padding: 15px 30px; 
+            padding: 30px 60px; /* Mantiene el tamaño original */
             text-align: center;
             text-decoration: none;
             border-radius: 10px;
-            font-size: 1.2rem; 
+            font-size: 3.6rem; /* Mantiene el tamaño original */
             font-weight: bold;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
             cursor: pointer;
