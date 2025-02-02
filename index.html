@@ -30,6 +30,7 @@
         img {
             max-width: 150px;
             border-radius: 10px;
+            margin: 10px;
         }
         .buttons {
             display: flex;
@@ -51,25 +52,41 @@
         .button:hover {
             background-color: #b39ddb;
         }
+        section {
+            padding: 50px 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
     </style>
 </head>
 <body>
     <h1>¿PUEDO SER TU SAN VALENTÍN <span class="highlight">BELÉN (NANI)</span>?</h1>
     <div class="container">
+        <!-- Agrega tus imágenes aquí -->
         <div>
-            <img src="https://via.placeholder.com/150" alt="Imagen 1">
-            <img src="https://via.placeholder.com/150" alt="Imagen 2">
+            <img src="ruta-de-tu-imagen-1.jpg" alt="Imagen 1">
+            <img src="ruta-de-tu-imagen-2.jpg" alt="Imagen 2">
         </div>
+        <!-- Botones que dirigen a secciones de la misma página -->
         <div class="buttons">
-            <!-- Formulario para la primera opción -->
-            <form action="pagina1.html" method="get">
-                <button type="submit" class="button">SÍ</button>
-            </form>
-            <!-- Formulario para la segunda opción -->
-            <form action="pagina2.html" method="get">
-                <button type="submit" class="button">SÍ</button>
-            </form>
+            <a href="#seccion1" class="button">SÍ</a>
+            <a href="#seccion2" class="button">SÍ</a>
         </div>
     </div>
+
+    <!-- Secciones a las que los botones dirigen -->
+    <section id="seccion1">
+        <h2>Sección 1</h2>
+        <p>¡Gracias por decir que SÍ! 🎉</p>
+        <p>Aquí puedes agregar más contenido para esta sección.</p>
+    </section>
+
+    <section id="seccion2">
+        <h2>Sección 2</h2>
+        <p>¡Otro SÍ! 🎉</p>
+        <p>Aquí puedes agregar más contenido para esta sección.</p>
+    </section>
 </body>
 </html>
