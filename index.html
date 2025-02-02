@@ -8,81 +8,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Pacifico', cursive; /* Actualiza la fuente */
+            font-family: 'Pacifico', cursive; 
             text-align: center;
-            background-color: #f9e2f0; /* Actualiza el color de fondo */
+            background-color: #f9e2f0; 
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "left buttons right"
+                "footer footer footer";
+            grid-gap: 20px;
+            width: 90vw;
+            height: 90vh;
         }
         h1 {
             font-size: 2.5rem;
-            margin: 20px 0;
+            grid-area: header;
+            margin: 0;
         }
         .highlight {
             background-color: #cce5ff;
             padding: 5px 10px;
             border-radius: 5px;
         }
-        .container {
+        .left, .right {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 20px;
+            grid-gap: 10px;
         }
-        img {
-            max-width: 150px;
+        .left {
+            grid-area: left;
+        }
+        .right {
+            grid-area: right;
+        }
+        .left img, .right img {
+            max-width: 120%; /* Aumenta el tamaño en un 20% */
             border-radius: 10px;
-            margin: 10px;
+        }
+        .left img {
+            margin-top: 10px;
+            margin-bottom: 30px;
+        }
+        .right img {
+            margin-top: 30px;
+            margin-bottom: 10px;
         }
         .buttons {
             display: flex;
+            flex-direction: column;
+            justify-content: center;
             align-items: center;
+            grid-area: buttons;
             gap: 20px;
         }
         .button {
             background-color: #d1c4e9;
             color: black;
-            padding: 30px 60px; /* Triple de grande */
+            padding: 15px 30px; 
             text-align: center;
             text-decoration: none;
             border-radius: 10px;
-            font-size: 3.6rem; /* Triple de grande */
+            font-size: 1.2rem; 
             font-weight: bold;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             border: none;
-            transition: background 0.3s ease; /* Transición suave */
+            transition: background 0.3s ease; 
         }
         .button:hover {
-            background: linear-gradient(to bottom, #d1c4e9, #c2f5ff); /* Degradado */
-        }
-        section {
-            padding: 50px 20px;
-            margin: 20px 0;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .extra-images {
-            display: flex;
-            gap: 40px; /* Más separación entre las nuevas imágenes */
-            margin-top: 30px; /* Espacio adicional por encima */
+            background: linear-gradient(to bottom, #d1c4e9, #c2f5ff); 
         }
         .side-image {
-            max-width: 400px;
-            margin-left: 20px; /* Espacio a la izquierda para separar de los botones */
+            max-width: 100%;
+            margin-left: 20px; 
+        }
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 10px;
+            grid-area: footer;
+        }
+        .footer img {
+            max-width: 100%;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-    <h1>¿PUEDO SER TU SAN VALENTÍN <span class="highlight">BELÉN (NANI)</span>?</h1>
     <div class="container">
-        <!-- Agrega tus imágenes aquí -->
-        <div>
+        <h1>¿PUEDO SER TU SAN VALENTÍN <span class="highlight">BELÉN (NANI)</span>?</h1>
+        <div class="left">
             <img src="Images/Gatito1.jpg" alt="Gatito1">
             <img src="Images/yoynani.jpg" alt="yoynani">
         </div>
-        <!-- Botones que dirigen a otro sitio web y la imagen al lado -->
         <div class="buttons">
             <a href="https://josuuu120.github.io/Sanvalentinrespuesta/" class="button">SÍ</a>
             <a href="https://josuuu120.github.io/Sanvalentinrespuesta/" class="button">SÍ</a>
@@ -90,8 +117,7 @@
                 <img src="Images/imagenLado.jpg" alt="Imagen Lado" class="side-image">
             </a>
         </div>
-        <!-- Nuevas imágenes debajo de los botones -->
-        <div class="extra-images">
+        <div class="right">
             <img src="Images/imagen3.jpg" alt="Imagen 3">
             <img src="Images/imagen4.jpg" alt="Imagen 4">
         </div>
