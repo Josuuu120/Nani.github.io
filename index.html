@@ -38,6 +38,7 @@
             display: flex;
             align-items: center;
             gap: 20px;
+            position: relative;
         }
         .button {
             background-color: #d1c4e9;
@@ -56,21 +57,21 @@
         .button:hover {
             background: linear-gradient(to bottom, #d1c4e9, #c2f5ff); /* Degradado */
         }
-        section {
-            padding: 50px 20px;
-            margin: 20px 0;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .side-image {
+            max-width: 400px;
+            margin-left: 50px; /* Mueve la imagen más a la derecha */
         }
         .extra-images {
             display: flex;
             gap: 40px; /* Más separación entre las nuevas imágenes */
             margin-top: 30px; /* Espacio adicional por encima */
         }
-        .side-image {
-            max-width: 400px;
-            margin-left: 20px; /* Mueve la imagen más a la derecha */
+        section {
+            padding: 50px 20px;
+            margin: 20px 0;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
