@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Valentín</title>
+    <!-- Enlace a Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Pacifico', cursive; /* Actualiza la fuente */
             text-align: center;
-            background-color: #f5f5f5;
+            background-color: #f9e2f0; /* Actualiza el color de fondo */
             margin: 0;
             padding: 0;
         }
@@ -39,18 +41,19 @@
         .button {
             background-color: #d1c4e9;
             color: black;
-            padding: 10px 20px;
+            padding: 30px 60px; /* Triple de grande */
             text-align: center;
             text-decoration: none;
             border-radius: 10px;
-            font-size: 1.2rem;
+            font-size: 3.6rem; /* Triple de grande */
             font-weight: bold;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
             cursor: pointer;
             border: none;
+            transition: background 0.3s ease; /* Transición suave */
         }
         .button:hover {
-            background-color: #b39ddb;
+            background: linear-gradient(to bottom, #d1c4e9, #c2f5ff); /* Degradado */
         }
         section {
             padding: 50px 20px;
@@ -58,6 +61,11 @@
             background-color: white;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .extra-images {
+            display: flex;
+            gap: 40px; /* Más separación entre las nuevas imágenes */
+            margin-top: 30px; /* Espacio adicional por encima */
         }
     </style>
 </head>
@@ -73,6 +81,11 @@
         <div class="buttons">
             <a href="https://josuuu120.github.io/Sanvalentinrespuesta/" class="button">SÍ</a>
             <a href="https://josuuu120.github.io/Sanvalentinrespuesta/" class="button">SÍ</a>
+        </div>
+        <!-- Nuevas imágenes debajo de los botones -->
+        <div class="extra-images">
+            <img src="Images/imagen3.jpg" alt="Imagen 3">
+            <img src="Images/imagen4.jpg" alt="Imagen 4">
         </div>
     </div>
 </body>
